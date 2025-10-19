@@ -1,0 +1,141 @@
+.ClientConvence{
+    padding-top: 150px;
+    width: 100%;
+}
+
+
+.TitulosConvincentes{
+    text-align: center;
+}
+
+.TitulosConvincentes{
+    & h1{
+        font-size: 40px;
+        font-family: "Gravitas One", serif;
+        font-weight: 0;
+        font-style: normal;
+    }
+
+    & p{
+        font-size: 25px;
+        color: rgba(0, 0, 0, 0.61);
+        width: 60%;
+        margin: auto;
+    }
+}
+
+.TitulosConvincentes strong{
+    color: rgb(204, 16, 16);
+}
+
+
+.blocosConvincentes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 70px;
+}
+
+
+.blocosConvincentes > div {
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.blocosConvincentes > div:hover {
+    transform: translateY(-3px) scale(1.0);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.Icon {
+    color: rgb(136, 24, 24);
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.tituloBloco {
+    width: 90%;
+    /* background-color: wheat; */
+    margin: auto;
+    & h1{
+        font-size: 25px;
+        padding-top: 20px;
+        font-weight: 700;
+    }
+}
+
+.TextoBloco {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    & p{
+        font-size: 20px;
+        padding: 20px 10px 30px 10px;
+        color: rgba(0, 0, 0, 0.466);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .blocosConvincentes {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .TitulosConvincentes{
+        & h1{
+            font-size: 4vw;
+        }
+
+        & p{
+            font-size: 2.4vw;
+            width: 70%;
+            padding: 30px;
+        }
+    }
+    .blocosConvincentes > div{
+        height: 300px;
+    }
+}
+
+
+
+@media screen and (max-width: 608px){
+    .blocosConvincentes {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+    }
+
+    .TitulosConvincentes{
+        & h1{
+            font-size: 6.4vw;
+        }
+
+        & p{
+            font-size: 3.4vw;
+            padding: 30px;
+            width: 96%;
+        }
+    }
+
+    .blocosConvincentes > div{
+        height: 300px;
+    }
+
+    .tituloBloco h1{
+        font-size: 4.9vw;
+        width: 100%;
+
+    }
+
+    .TextoBloco p{
+        font-size: 13px;
+    }
+}

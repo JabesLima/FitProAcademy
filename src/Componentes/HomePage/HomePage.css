@@ -1,0 +1,204 @@
+.HomePage{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 140px 10px 10px 10px;
+    margin: auto;
+    gap: 10px;
+}
+
+
+
+.BlocoA{
+    width: 95%;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+
+.ApresentacaoDaAcademia{
+    width: 100%;
+    & h1{
+        font-size: 3.2vw;
+        font-family: "Gravitas One", serif;
+        font-weight: 0;
+        font-style: normal;
+    }
+    & p{
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.61);
+        padding: 35px 10px 26px 0px;
+    }
+}
+
+.ApresentacaoDaAcademia strong{
+    color: rgb(204, 16, 16);
+}
+
+
+/* .BotaoDeDemonstracao{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+} */
+
+/* .BotaoDeDemonstracao button{
+    width: 180px;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px;
+    font-family: "BBH Sans Hegarty", sans-serif;
+    transition: transform 0.4s ease-in-out;
+
+} */
+
+/* .BotaoDeDemonstracao button:hover{
+    transform: scale(1.1);
+} */
+
+/* .b1{
+    background-color: rgb(206, 29, 29);
+    color: white;
+    font-size: 18px;
+}
+
+.b2{
+    background-color: white;
+    color: black;
+    font-size: 16px;
+} */
+
+/* .PlayIcone{
+    font-size: 13px;
+    padding: 2px;
+} */
+
+
+.RedesSociais{
+    display: flex;
+    justify-content: space-between;
+    width: 37%;
+    /* background-color: aqua; */
+    flex-wrap: nowrap;
+    padding-top: 30px;
+    font-size: 40px;
+}
+
+
+.RedesSociais a {
+    cursor: pointer;
+    color: black;
+    transition: transform 0.2s ease-in-out;
+}
+
+.RedesSociais .IS1:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 17px #ee00e2);
+}
+
+.RedesSociais .IS2:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 17px #0053ee);
+}
+
+.RedesSociais .IS3:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 17px #08ee00);
+}
+
+.FotoAcademia_Boxe{
+    /* background-color: #0053ee; */
+    width: 100%;
+    /* height: 50%; */
+    padding-top: 30px;
+}
+
+.FotoAcademia_Boxe img{
+    width: 100%;
+    height: 99%;
+    border-radius: 10px;
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    .HomePage{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .ApresentacaoDaAcademia{
+    width: 100%;
+    & h1{
+        font-size: 6vw;
+    }
+    & p{
+        font-size: 3vw;
+    }
+    }
+
+
+    .FotoAcademia_Boxe img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .RedesSociais{
+        /* background-color: #0053ee; */
+        width: 60%;
+        flex-wrap: nowrap;
+        padding-top: 30px;
+        font-size: 50px;
+    }
+}
+
+
+@media screen and (max-width: 608px){
+    .HomePage{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .ApresentacaoDaAcademia{
+        width: 100%;
+        & h1{
+            font-size: 6vw;
+        }
+        & p{
+            font-size: 3.5vw;
+        }
+    }
+
+    /* .BotaoDeDemonstracao{
+        gap: 20px;
+    } */
+
+    /* .BotaoDeDemonstracao button{
+        height: 13vw;
+        border-radius: 10px;
+    }
+
+    .b1{
+        font-size: 3.7vw;
+    }
+
+    .b2{
+        font-size: 3.4vw;
+        padding: 10px;
+    }
+
+    .PlayIcone{
+        font-size: 3vw;
+        padding: 0px;
+    } */
+
+    .RedesSociais{
+        font-size: 10vw;
+        padding-top: 20px;
+    }
+}

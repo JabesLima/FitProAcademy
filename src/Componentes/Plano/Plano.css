@@ -1,0 +1,236 @@
+.Plano{
+    padding: 102px 10px 10px 10px;
+}
+
+
+.TituloP{
+    text-align: center;
+    & h1{
+        font-size: 40px;
+        font-family: "Gravitas One", serif;
+        font-weight: 0;
+        font-style: normal;
+    }
+
+    & p{
+        font-size: 25px;
+        color: rgba(0, 0, 0, 0.61);
+        width: 60%;
+        margin: auto;
+    }
+}
+
+
+.TituloP strong{
+    color: rgb(204, 16, 16);
+}
+
+
+
+.BlocosP{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px; 
+    padding: 70px 0px 70px 0px;
+
+}
+
+
+.BlocosP > div{
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 0;
+    width: 100%;
+    padding: 30px;
+}
+
+.BlocosP > div::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 0%;
+  border-top: 2px solid #cc1010;
+  border-left: 2px solid #cc1010;
+  border-right: 2px solid #cc1010;
+  border-bottom: 22px;
+  transition: height 0.4s ease;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+
+.BlocosP > div:hover::before {
+  height: 99%;
+}
+
+
+
+
+.BlocosP > div:hover {
+    transform: translateY(-1px) scale(1.0);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.tituloP{
+    & h1{
+        font-size: 34px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    & p{
+        font-size: 17px;
+        width: 80%;
+        margin: auto;
+        color: rgba(0, 0, 0, 0.658);
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+
+.PrecoP{
+    display: flex;
+    justify-content: center;
+    & h1{
+        color: rgb(204, 16, 16);
+        font-size: 40px;
+        font-family: "Gravitas One", serif;
+        font-weight: bolder;
+        font-style: bold;
+    }
+
+    & p{
+        font-size: 17px;
+        padding-top: 20px;
+    }
+}
+
+.ListaPlano ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 30px;
+}
+
+.ListaPlano li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 17px;
+    padding: 14px;
+    color: rgba(0, 0, 0, 0.685);
+}
+
+.ListaPlano svg {
+    color: rgb(204, 16, 16);
+}
+
+
+.butoes{
+    padding: 40px 10px 10px 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.BlocosP button{
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    background-color: #cc1010;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.BlocosP button a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.BlocosP button:hover{
+    background-color: #b93b3b;
+}
+
+@media screen and (max-width: 1024px){
+    .BlocosP{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tituloP{
+        & h1{
+            font-size: 4vw;
+        }
+
+        & p{
+            font-size: 2.3vw;
+            width: 80%;
+        }
+    }
+
+
+    .ListaPlano li {
+        font-size: 3vw;
+    }
+
+    .BlocosP button{
+        font-size: 23px;
+        padding: 25px;
+    }
+
+    .TituloP{
+        & h1{
+            font-size: 5vw;
+        }
+
+        & p{
+            font-size: 2.3vw;
+            width: 70%;
+        }
+    }
+
+
+}
+
+
+@media screen and (max-width: 608px){
+    .TituloP{
+        & h1{
+            font-size: 6.4vw;
+        }
+
+        & p{
+            font-size: 2.8vw;
+            width: 80%;
+            padding-top: 10px;
+        }
+    }
+
+    .tituloP{
+        & h1{
+            font-size: 5vw;
+        }
+
+        & p{
+            font-size: 3.1vw;
+            width: 100%;
+        }
+    }
+
+
+    .ListaPlano li {
+        font-size: 3.4vw;
+    }
+
+    .BlocosP button{
+        font-size: 16px;
+        padding: 14px;
+    }
+}
